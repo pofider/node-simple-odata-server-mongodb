@@ -3,4 +3,4 @@
 [![Build Status](https://travis-ci.org/pofider/node-simple-odata-server-nedb.png?branch=master)](https://travis-ci.org/pofider/node-simple-odata-server-nedb)    
 
 
-**Adapter for [node.js simple odata server](https://github.com/pofider/node-simple-odata-server) using [nedb](https://github.com/louischatriot/nedb).
+**Adapter for [node.js simple odata server](https://github.com/pofider/node-simple-odata-server) using [nedb](https://github.com/louischatriot/nedb).**
