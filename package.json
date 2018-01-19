@@ -1,6 +1,6 @@
 {
   "name": "simple-odata-server-mongodb",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Adapter for node.js simple odata server using mongodb",
   "main": "index.js",
   "scripts": {
