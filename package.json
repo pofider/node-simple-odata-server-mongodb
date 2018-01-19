@@ -1,0 +1,39 @@
+{
+  "name": "simple-odata-server-mongodb",
+  "version": "0.1.0",
+  "description": "Adapter for node.js simple odata server using mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --exit -R spec && standard"
+  },
+  "author": "Jan Blaha",
+  "license": "MIT",
+  "repository": "pofider/node-simple-odata-server-mongodb",
+  "keywords": [
+    "OData",
+    "server",
+    "mongodb"
+  ],
+  "dependencies": {
+    "mongodb": "^3.0.1"
+  },
+  "standard": {
+    "env": {
+      "mocha": true,
+      "node": true
+    }
+  },
+  "devDependencies": {
+    "eslint": "4.15.0",
+    "mocha": "^5.0.0",
+    "safe-buffer": "5.1.1",
+    "should": "13.2.1",
+    "simple-odata-server": "pofider/node-simple-odata-server",
+    "standard": "10.0.3",
+    "supertest": "3.0.0"
+  },
+  "files": [
+    "lib",
+    "index.js"
+  ]
+}
