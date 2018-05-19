@@ -39,6 +39,17 @@ describe('mongoAdapter', function () {
     })
   })
 
+  it('insert with related property with _id should convert this _id to ObjectId', function (done) {
+    odataServer.cfg.insert('test', {foo: 'Hello', children: [{_id: '5aff78d7338df4299c104002'}]}, {}, function (err, doc) {
+      if (err) {
+        return done(err)
+      }
+      doc.children[0].should.have.property('_id').which.is.a.Object()
+      doc.children[0]._id.should.have.property('_bsontype').which.is.eql('ObjectID')
+      done()
+    })
+  })
+
   it('remove should remove', function (done) {
     db.collection('test').insert({foo: 'Hello'}, function (err) {
       if (err) {
